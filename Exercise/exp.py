@@ -18,5 +18,7 @@ for filepath in filePaths:
 
     pdf.set_font("Times", "I", 16)
     pdf.cell(50, 8, name, 0, 1, 'L')
+    pdf.set_font("Times", "I", 12)
+    pdf.multi_cell(0, 6, content[0])
 
 pdf.output('animals.pdf')
